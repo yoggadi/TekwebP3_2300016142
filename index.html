@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yog-To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Daftar List</h1>
+  <p>Anda dapat membuat list apapun, dan juga bisa mengedit list, menandai list, ataupun menghapus list.</p>
+  
+  <!-- Bagian untuk Pengelolaan Tugas -->
+  <input type="text" id="taskInput" placeholder="Tambahkan List Baru">
+  <button id="addTaskBtn">Tambahkan Teks</button>
+  <ul id="taskList" class="task-list"></ul>
+
+  <br><br>
+  <h1>Mengubah Halaman</h1>
+  <p>Anda bisa mengatur tampilan halaman sesuka anda, mengubah ukuran font, ataupun mengubah jenis font</p>
+
+  <!-- Bagian untuk Pengaturan Tampilan Halaman -->
+  <label for="bgColor">Ubah warna background: </label>
+  <input type="color" id="bgColor" />
+  <br><br>
+
+  <button id="toggleDarkMode">Mode Gelap</button>
+  <br><br>
+
+  <label for="fontSize">Ubah ukuran font: </label>
+  <input type="range" id="fontSize" min="10" max="40" value="16">
+  <br><br>
+
+  <label for="fontStyle">Ubah jenis font: </label>
+  <select id="fontStyle">
+    <option value="Arial">Sans-serif (Arial)</option>
+    <option value="Algerian">Algerian (Algerian)</option>
+    <option value="Franklin Gothic Medium">Franklin Gothic Medium(Franklin Gothic Medium)</option> 
+    <option value="Arial Narrow"> Arial Narrow(Arial Narrow)</option>
+    <option value="Georgia">Serif (Georgia)</option>
+    <option value="TimesNewRoman">TimesNewRoman (TimesNewRoman)</option>
+    <option value="Calibri">Calibri (Calibri)</option>
+  </select>
+
+  <script src="script.js"></script>
+</body>
+</html>
