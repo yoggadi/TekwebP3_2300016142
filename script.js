@@ -4,11 +4,16 @@ const addTaskBtn = document.getElementById('addTaskBtn');
 const taskList = document.getElementById('taskList');
 
 addTaskBtn.addEventListener('click', function() {
-  const taskText = taskInput.value.trim();
-  if (taskText) {
-    addTask(taskText);
-    taskInput.value = '';
-  }
+    const taskText = taskInput.value.trim();
+    
+    // Peringatan jika teks kosong
+    if (!taskText) {
+        alert('Teks tugas tidak boleh kosong!'); // Peringatan jika kosong
+        return; // Keluar dari fungsi
+    }
+
+    addTask(taskText); // Menambahkan tugas jika input tidak kosong
+    taskInput.value = ''; // Menghapus kolom input setelah menambahkan
 });
 
 function addTask(taskText) {
